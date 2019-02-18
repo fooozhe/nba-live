@@ -44,5 +44,3 @@ def get_match_info(match_id):
     response = requests.get(Match_Info_Url % (today, match_id))
     match_info = json.loads(response.text)
     return match_info
-        
-        

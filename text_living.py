@@ -11,7 +11,7 @@ class TextLiving:
         self.home_score = kwargs['home_score']
         self.visit_score = kwargs['visit_score']
 
-
     def __repr__(self):
-        return '{self.home_team} {self.home_score} - {self.visit_score} {self.visit_team} {self.period_cn}\n{self.live_text}\n{sep}'\
-            .format(self=self, sep='*'*60)
+        # return '{self.home_team} {self.home_score} - {self.visit_score} {self.visit_team} {self.period_cn}\n{self.live_text}\n{sep}'\
+        #     .format(self=self, sep='*'*60)
+        return '{self.period_cn} ({self.home_score}-{self.visit_score}) {self.live_text}'.format(self=self)
