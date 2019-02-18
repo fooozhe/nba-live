@@ -26,7 +26,7 @@ def main_loop():
 
     match = get_watch_match(matches)
     if not match:
-        print('没去找到该比赛')
+        print('没有找到该比赛')
         return
 
     current_match_max_sid = -1
